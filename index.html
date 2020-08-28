@@ -1,42 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Interface</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/player.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
 </head>
-<body data-spy="scroll" data-target="#navbarResponsive">
 
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <!--Player Section Start-->
     <div id="player">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#"><img src=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#player">Player</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#graphic-eq">Graphic-Equalizer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#para-eq">Parametric Equalizer</a>
-                </li>
-            </ul>
+
+        <!--Navigation Start-->
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#"><img src=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#player">Player</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#parametric-eq">Parametric-Equalizer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#graphi-eq">Graphic Equalizer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#compressor">Compressor</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Navigation End-->
+
+
+        <!--Player Start-->
+
+        <div class="player">
+           
+            <!--Display Details-->
+            <div class="details">
+                <div class="now-playing">PLAYING x OF y</div>
+                <div class="track-art"></div>
+
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
+
+            <!--Buttons-->
+            <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+            </div>
+
+            <!--Seek Slider-->
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+            </div>
+
+            <!--Volume Slider-->
+            <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+            </div>
         </div>
-    </nav>
+    <!--<canvas id="spectrum"></canvas>-->
+    </div>
+
+    <!--Player End-->
+    </div>
+    <!--Player Section End-->
+
+    <!--Para EQ Section Start-->
+
+    <div class="parametric-eq-box">
+
+
+        <div class="parametric-eq">
+
+            <div class="eq-item freq-box">
+                <p class="description">Frequency</p>
+                <input class="freqDial" data-min="20" data-max="20000" value="1000" data-width="80"
+                    data-bgColor="#09CEFB" data-fgColor="#3C4B6F" />
+            </div>
+
+            <div class="eq-item bandwidth-box">
+                <p class="description">Bandwidth</p>
+                <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1"
+                    data-width="80" data-bgColor="#09CEFB" data-fgColor="#3C4B6F" />
+            </div>
+
+            <div class="eq-item gain-box">
+                <p class="description">Gain</p>
+                <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
+                    data-thickness=".5" data-width="80" data-bgColor="#09CEFB" data-fgColor="#3C4B6F"
+                    data-angleOffset="-125" data-angleArc="250" />
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="parametric-eq-box">
+
+
+        <div class="parametric-eq">
+
+            <div class="eq-item freq-box">
+                <p class="description">Frequency</p>
+                <input class="freqDial" data-min="20" data-max="200" value="64" data-width="80"
+                    data-bgColor="#09CEFB" data-fgColor="#3C4B6F" />
+            </div>
+
+            <div class="eq-item bandwidth-box">
+                <p class="description">Bandwidth</p>
+                <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1"
+                    data-width="80" data-bgColor="#09CEFB" data-fgColor="#3C4B6F" />
+            </div>
+
+            <div class="eq-item gain-box">
+                <p class="description">Gain</p>
+                <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
+                    data-thickness=".5" data-width="80" data-bgColor="#09CEFB" data-fgColor="#3C4B6F"
+                    data-angleOffset="-125" data-angleArc="250" />
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="parametric-eq-box">
+
+
+        <div class="parametric-eq">
+
+            <div class="eq-item freq-box">
+                <p class="description">Frequency</p>
+                <input class="freqDial" data-min="20" data-max="20000" value="12000" data-width="80"
+                    data-bgColor="#09CEFB" data-fgColor="#3C4B6F" />
+            </div>
+
+            <div class="eq-item bandwidth-box">
+                <p class="description">Bandwidth</p>
+                <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1"
+                    data-width="80" data-bgColor="#09CEFB" data-fgColor="#3C4B6F" />
+            </div>
+
+            <div class="eq-item gain-box">
+                <p class="description">Gain</p>
+                <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
+                    data-thickness=".5" data-width="80" data-bgColor="#09CEFB" data-fgColor="#3C4B6F"
+                    data-angleOffset="-125" data-angleArc="250" />
+            </div>
+
+        </div>
+
+
+    </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <!--Para EQ Section End-->
+
+    <!--Graphic EQ Section Start-->
+    <!--Graphic EQ Section End-->
+
+    <!--Compressor Section Start-->
+    <!--Compressor Section End-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/player.js"></script>
 </body>
+
 </html>

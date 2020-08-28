@@ -1,3 +1,11 @@
+body {
+    background-color: #485A4D;
+    color: #fafafa;
+}
+#player {
+    height: 100vh;
+}
+
 .player { 
     height: 95vh; 
     display: flex; 
@@ -180,23 +188,25 @@ p{
         
 .freq-box{
     /*background-color:rgba(9, 251, 184, 0.18);*/
-    background-color: #fafafa;
+    background-color: #12060A;
 
 }
 
 
 .bandwidth-box{
     /*background-color:rgba(169, 255, 0, 0.15);*/
-    background-color: #fafafa;
+    background-color: #12060A;
 }
 
 .gain-box{
     /*background-color:rgba(251, 255, 0, 0.26);*/
-    background-color: #fafafa;
+    background-color: #12060A;
 }
 
 /*--Graphic EQ---*/
-
+#graphic-eq {
+    height: 100vh;
+}
 .graphic-eq-box {
     position:relative;
     /*position: absolute;*/
@@ -269,3 +279,49 @@ p{
     font-size: 2em;
     height: 50px;
   }
+
+  /*--Compressor---*/
+
+  #compressor {
+      height: 100vh;
+  }
+  .compressor-box {
+    position: relative;
+    top: 25rem;
+    left: 4rem;
+    width:50%;
+    border: 0px solid gray;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .compressor {
+    margin:0 auto;
+    width:800px;
+  }
+
+  .compressor p {
+    color: #fafafa;
+  }
+  
+  
+  
+        .threshold-box {
+            background-color: #12060A;
+        }
+  
+        .ratio-box {
+            background-color: #12060A;
+        }
+  
+        .knee-box {
+            background-color: #12060A;
+        }
+  
+        .release-box {
+            background-color: #12060A;
+        }
+  
+        .attack-box {
+            background-color: #12060A;
+        }

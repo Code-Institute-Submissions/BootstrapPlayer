@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/player.css">
+    <link rel="stylesheet" href="assets/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
@@ -93,7 +94,7 @@
     <!--Player Section End-->
 
     <!--Para EQ Section Start-->
-<div id="parametric-eq"
+<div id="parametric-eq">
     <div class="parametric-eq-box">
 
 
@@ -230,16 +231,53 @@
     <!--Graphic EQ Section End-->
 
     <!--Compressor Section Start-->
+
+    <div class="compressor-box">
+            
+        <div class="compressor">
+            <div class="eq-item threshold-box">
+                <p class="description">Threshold</p>
+                <input class="thresholdDial" data-min="-100" data-max="0.00" value="-40" data-width="80"
+                    data-step="1" data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
+            </div>
+
+            <div class="eq-item ratio-box">
+                <p class="description">Ratio</p>
+                <input class="ratioDial" data-min="1" data-max="20" value="12" data-width="80" data-step="1"
+                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
+            </div>
+
+            <div class="eq-item knee-box">
+                <p class="description">Knee</p>
+                <input class="kneeDial" data-min="0" data-max="40" value="30" data-width="80"
+                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
+            </div>
+
+            <div class="eq-item release-box">
+                <p class="description">Release</p>
+                <input class="releaseDial" data-min="0" data-max="1" value="0.003" data-width="80" data-step="0.1"
+                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
+            </div>
+
+            <div class="eq-item attack-box">
+                <p class="description">Attack</p>
+                <input class="attackDial" data-min="0" data-max="1" value="0.250" data-width="80" data-step="0.01"
+                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
+            </div>
+        </div>
+    </div>
     <!--Compressor Section End-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
         integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js" integrity="sha512-NhRZzPdzMOMf005Xmd4JonwPftz4Pe99mRVcFeRDcdCtfjv46zPIi/7ZKScbpHD/V0HB1Eb+ZWigMqw94VUVaw==" crossorigin="anonymous"></script>
     <script src="assets/player.js"></script>
     <script src="assets/para-eq.js"></script>
     <script src="assets/graphic-eq.js"></script>
     <script src="assets/compressor.js"></script>
+    <script src="assets/knob-style.js"></script>
 </body>
 
 </html>

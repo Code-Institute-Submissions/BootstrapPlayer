@@ -129,3 +129,143 @@
   i.fa-step-backward { 
     cursor: pointer; 
   }
+
+  /*--Para EQ---*/
+#parametric-eq {
+    height: 100vh;
+}
+  .parametric-eq-box {
+    position:relative;
+    top:50px;
+    margin: 0 auto;
+    width:400px;
+    border: 0px solid gray;
+    
+}
+
+
+
+.parametric-eq{
+    margin:0 auto;
+    width:800px;
+}
+
+
+.eq-item {
+    display: inline-block;
+    padding: 0.9em;
+    border: 2px solid rgba(196, 28, 90, 0.16);
+    border-radius:5px;
+    height:150px;
+    
+}
+
+p{
+    color:rgba(60, 75, 111, 0.94);
+    
+   
+}
+
+.description{
+     margin-left:20px;
+}
+
+
+#freqDial{
+    
+    width:10px;
+    height: 10px;
+}
+
+        
+.freq-box{
+    /*background-color:rgba(9, 251, 184, 0.18);*/
+    background-color: #fafafa;
+
+}
+
+
+.bandwidth-box{
+    /*background-color:rgba(169, 255, 0, 0.15);*/
+    background-color: #fafafa;
+}
+
+.gain-box{
+    /*background-color:rgba(251, 255, 0, 0.26);*/
+    background-color: #fafafa;
+}
+
+/*--Graphic EQ---*/
+
+.graphic-eq-box {
+    position:relative;
+    /*position: absolute;*/
+    /*top: 25%;
+    left: 75%;*/
+    align-items: center;
+    margin: 0 auto;
+    width:400px;
+    /*border: 0px solid gray;*/
+    
+    
+  }
+  
+  .graphic-eq{
+    margin:0 auto;
+    width:375px;
+    top:100px;
+    align-items: center;
+  }
+  .graphic-eq p {
+  color: #fafafa;
+  }
+  
+  .eq {
+    display: inline-block;
+    padding: 0.9em;
+    /*border: 2px solid orange;*/
+    border: 2px solid #fff;
+    align-items: center;
+  }
+  
+  p{
+    /*color:rgba(60, 75, 111, 0.94);*/
+    color: #fafafa;
+  }
+  
+  .eq-band{
+    display:inline-block;
+  }
+  
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    width: 100%;
+    margin-left: 4px;
+  }
+  
+  
+  .ui-widget-header{
+    background-color: rgba(29, 32, 121, 0.36)
+  }
+  
+  .app {
+    position: relative;
+    margin: 10px;
+  }
+  
+  .app > div {
+    width: 0.1px;
+    background-color: #21D89E;
+    display: inline-block;
+    outline-style: solid;
+    outline-color: #21D89E;
+    outline-width: 0.1px;
+    margin-left: 8px;
+  }
+  
+  .bin-count {
+    position: absolute;
+    left: 30%;
+    float: right;
+    font-size: 2em;
+    height: 50px;
+  }

@@ -205,22 +205,22 @@ p{
     background-color: #12060A;
 }
 
-/*--Graphic EQ---*/
+/*--------------------------------------------Graphic EQ---*/
 #graphic-eq {
     height: 100vh;
+    
 }
 .graphic-eq-box {
-    position:relative;
-    /*position: absolute;*/
-    /*top: 25%;
-    left: 75%;*/
+   position: relative;
     align-items: center;
     margin: 0 auto;
     width:400px;
+    top: 50%;
     /*border: 0px solid gray;*/
     
-    
   }
+
+ 
   
   .graphic-eq{
     margin:0 auto;
@@ -236,8 +236,9 @@ p{
     display: inline-block;
     padding: 0.9em;
     /*border: 2px solid orange;*/
-    border: 2px solid #fff;
+    border: 2px solid #4a040f;
     align-items: center;
+    background-color: #12060A;
   }
   
   p{
@@ -252,11 +253,12 @@ p{
   .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     width: 100%;
     margin-left: 4px;
+    background-color: #c3c9c5;
   }
   
   
   .ui-widget-header{
-    background-color: rgba(29, 32, 121, 0.36)
+    background-color: rgba(33, 216, 158, 0.5)
   }
   
   .app {

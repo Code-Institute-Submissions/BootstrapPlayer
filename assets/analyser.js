@@ -50,7 +50,7 @@ function draw() {
   let posX = 0;
   for (let i = 0; i < bufferLength; i++) {
     const barHeight = (dataArray[i] + 600) * 2;
-    canvasCtx.fillStyle = '#21D89E';
+    canvasCtx.fillStyle = 'rgba(33, 216, 158, 0.2)';
     canvasCtx.fillRect(posX, canvas.height - barHeight / 2, barWidth, barHeight / 2);
     posX += barWidth + 1;
   }

@@ -106,7 +106,9 @@ function loadTrack(track_index) {
     // Play the loaded track 
     curr_track.play(); 
     isPlaying = true; 
-    
+    if(audioContext.state !== 'running') {
+        audioContext.resume();
+     }
     // Replace icon with the pause icon 
     playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>'; 
   } 

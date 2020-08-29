@@ -329,3 +329,15 @@ p{
         .attack-box {
             background-color: #12060A;
         }
+
+        /*----Analyser----------*/
+
+        #spectrum {
+            height: 100px;
+          bottom: 0;
+            max-width: 100%;
+            width: 100%;
+            max-height: 100%;
+            margin: 0 auto;
+            position: absolute;
+        }

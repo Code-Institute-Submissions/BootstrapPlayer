@@ -42,7 +42,7 @@ function draw() {
   //analyserNode.getFloatFrequencyData(dataArray);
   analyserNode.getByteFrequencyData(dataArray);
   //Draw black background
-  canvasCtx.fillStyle = 'rgba(56, 56, 56, 0.7)';
+  canvasCtx.fillStyle = '#485A4D';
   canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
 
   //Draw spectrum
@@ -50,7 +50,7 @@ function draw() {
   let posX = 0;
   for (let i = 0; i < bufferLength; i++) {
     const barHeight = (dataArray[i] + 600) * 2;
-    canvasCtx.fillStyle = 'rgba(' + Math.floor(barHeight + 200) + '66, 142, 115, 0.5)';
+    canvasCtx.fillStyle = '#21D89E';
     canvasCtx.fillRect(posX, canvas.height - barHeight / 2, barWidth, barHeight / 2);
     posX += barWidth + 1;
   }

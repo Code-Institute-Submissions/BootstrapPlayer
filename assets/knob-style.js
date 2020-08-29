@@ -3,7 +3,7 @@
 $(function() {
     $(".freqDial").knob({
 
-        change: function(valueFreqDial) {
+        release: function(valueFreqDial) {
             parametricEQ1.frequency.value = valueFreqDial;
 
 
@@ -12,7 +12,7 @@ $(function() {
 
     $(".bandwidthDial").knob({
 
-        change: function(valueBandwidthDial) {
+        release: function(valueBandwidthDial) {
             parametricEQ1.Q.value = valueBandwidthDial;
 
         }
@@ -20,7 +20,7 @@ $(function() {
 
     $(".gainDial").knob({
 
-        change: function(valueGainDial) {
+        release: function(valueGainDial) {
             parametricEQ1.gain.value = valueGainDial;
 
 

@@ -97,6 +97,9 @@ function loadTrack(track_index) {
     // depending on the current state 
     if (!isPlaying) playTrack(); 
     else pauseTrack(); 
+    if(audioContext.state !== 'running') {
+        audioContext.resume();
+     }
   } 
     
   function playTrack() { 

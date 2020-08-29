@@ -1,5 +1,5 @@
 let now_playing = document.querySelector(".now-playing"); 
-let track_art = document.querySelector("canvas"); 
+let track_art = document.querySelector(".track-art"); 
 let track_name = document.querySelector(".track-name"); 
 let track_artist = document.querySelector(".track-artist"); 
   
@@ -29,16 +29,16 @@ let track_list = [
     path: "music/04 - Julia Delaney.MP3"
   }, 
   { 
-    name: "Lark on the Strand", 
-    artist: "Dervish", 
+    name: "Ahern's Egg", 
+    artist: "Peter Browne", 
     image: "Image URL", 
-    path: "07 - Lark On The Strand=Lark On The Strand; Frahers; Four Mile Stone; Mountain Top.mp3"
+    path: "music/04 Jigs - Ahern's Egg, The Four Six Jig.mp3"
   }, 
   { 
-    name: "Touching Cloth", 
-    artist: "Dervish", 
+    name: "Stormy Weather", 
+    artist: "Peter Browne", 
     image: "Image URL", 
-    path: "01 - Touching Cloth.mp3", 
+    path: "music/06 Reels - Stormy Weather (Johnny Doherty Version), Pedalling Patterns, The Mountain Top.mp3", 
   }, 
 ]; 
 

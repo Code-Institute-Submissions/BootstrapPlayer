@@ -12,7 +12,7 @@ audioEle.preload = 'auto';
 //Create analyser node
 const analyserNode = audioContext.createAnalyser();
 //analyserNode.fftSize = 256;
-analyserNode.fftSize = 2048;
+analyserNode.fftSize = 4096;
 
 const bufferLength = analyserNode.frequencyBinCount;
 const dataArray = new Uint8Array(bufferLength);
@@ -42,7 +42,7 @@ function draw() {
   //analyserNode.getFloatFrequencyData(dataArray);
   analyserNode.getByteFrequencyData(dataArray);
   //Draw black background
-  canvasCtx.fillStyle = '#485A4D';
+  canvasCtx.fillStyle = '#080706';
   canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
 
   //Draw spectrum
@@ -50,7 +50,7 @@ function draw() {
   let posX = 0;
   for (let i = 0; i < bufferLength; i++) {
     const barHeight = (dataArray[i] + 600) * 2;
-    canvasCtx.fillStyle = 'rgba(33, 216, 158, 0.2)';
+    canvasCtx.fillStyle = '#fff';
     canvasCtx.fillRect(posX, canvas.height - barHeight / 2, barWidth, barHeight / 2);
     posX += barWidth + 1;
   }

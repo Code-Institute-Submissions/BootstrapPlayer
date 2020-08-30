@@ -22,7 +22,7 @@
 
         <!--Navigation Start-->
 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
             <a class="navbar-brand" href="#"><img src=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
@@ -100,6 +100,30 @@
     <button>start</button>
     <div class="parametric-eq-box">
 
+        <div class="parametric-eq">
+
+            <div class="eq-item freq-box">
+                <p class="description">Frequency</p>
+                <input class="freqDial" data-min="20" data-max="200" value="64" data-width="80"
+                    data-bgColor="#27614F" data-fgColor="#21D89E" />
+            </div>
+
+            <div class="eq-item bandwidth-box">
+                <p class="description">Bandwidth</p>
+                <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1"
+                    data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E" />
+            </div>
+
+            <div class="eq-item gain-box">
+                <p class="description">Gain</p>
+                <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
+                    data-thickness=".5" data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E"
+                    data-angleOffset="-125" data-angleArc="250" />
+            </div>
+
+        </div>
+
+
 
         <div class="parametric-eq">
 
@@ -129,7 +153,7 @@
     <div class="parametric-eq-box">
 
 
-        <div class="parametric-eq">
+        <!--<div class="parametric-eq">
 
             <div class="eq-item freq-box">
                 <p class="description">Frequency</p>
@@ -150,7 +174,7 @@
                     data-angleOffset="-125" data-angleArc="250" />
             </div>
 
-        </div>
+        </div>-->
 
 
     </div>

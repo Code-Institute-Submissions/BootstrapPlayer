@@ -68,9 +68,9 @@ function loadTrack(track_index) {
     curr_track.addEventListener("ended", nextTrack); 
     
     // Apply a random background color 
-    random_bg_color(); 
+    /*random_bg_color();*/
   } 
-    
+
   /*function random_bg_color() { 
     // Get a random number between 64 to 256 
     // (for getting lighter colors) 

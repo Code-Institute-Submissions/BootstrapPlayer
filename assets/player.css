@@ -1,5 +1,7 @@
 body {
-    background-color: #485A4D;
+    /*background-color: #573B76;*/
+    background: linear-gradient(45deg, #941504, #000) fixed;
+    
     color: #fafafa;
 }
 #player {
@@ -24,7 +26,7 @@ body {
     margin-top: 25px; 
   } 
     
-  .track-art { 
+  /*.track-art { 
     margin: 25px; 
     height: 250px; 
     width: 250px; 
@@ -33,7 +35,7 @@ body {
     background-size: cover; 
     background-position: center; 
     border-radius: 15%; 
-  } 
+  } */
     
   /* Changing the font sizes to suitable ones */
   .now-playing { 
@@ -296,7 +298,7 @@ p{
     width:50%;
     border: 0px solid gray;
     margin: 0 auto;
-    display: flex;
+    display: inline-flex;
   }
 
   .compressor {

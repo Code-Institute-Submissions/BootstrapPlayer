@@ -1,6 +1,6 @@
 body {
     /*background-color: #573B76;*/
-    background: linear-gradient(45deg, #941504, #000) fixed;
+    background: linear-gradient(-45deg, #941504, #372E2E) fixed;
     
     color: #fafafa;
 }
@@ -8,6 +8,9 @@ body {
     height: 100vh;
 }
 
+#button-nav {
+  height: 20%;
+}
 
 
 .player { 

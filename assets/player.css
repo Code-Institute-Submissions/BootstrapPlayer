@@ -8,11 +8,25 @@ body {
     height: 100vh;
 }
 
-#button-nav {
-  height: 20%;
+ .button-nav {
+   border: #21D89E solid;
+   background-color: #372E2E;
+   color: #fafafa;
+ }
+
+.nav-link {
+  word-break: keep-all;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 120%;
+  color: #fafafa;
+  background-color: #372E2E;
 }
-
-
 .player { 
     height: 95vh; 
     display: flex; 
@@ -347,4 +361,10 @@ p{
             position: fixed;
             z-index: -10;
             filter: opacity(80%);
+        }
+
+        @media only screen and (max-width: 600px) {
+          .nav-link {
+            font-size: 10px;
+          }
         }

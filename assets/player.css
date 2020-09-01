@@ -159,10 +159,12 @@ body {
     cursor: pointer; 
   }
 
-  /*--Para EQ---*/
+  /*-----------------------Para EQ---*/
+
 #parametric-eq {
     height: 100vh;
 }
+
   .parametric-eq-box {
     position:relative;
     top:50px;
@@ -186,6 +188,8 @@ body {
     border: 2px solid rgba(196, 28, 90, 0.16);
     border-radius:5px;
     height:150px;
+    margin: 0 auto;
+    
     
 }
 
@@ -225,17 +229,18 @@ p{
 }
 
 /*--------------------------------------------Graphic EQ---*/
+
 #graphic-eq {
     height: 100vh;
-    
 }
+
 .graphic-eq-box {
    position: relative;
     align-items: center;
     margin: 0 auto;
-    width:400px;
-    top: 50%;
-    /*border: 0px solid gray;*/
+    width:600px;
+    top: 30%;
+    left: 5%;
     
   }
 
@@ -243,7 +248,7 @@ p{
   
   .graphic-eq{
     margin:0 auto;
-    width:375px;
+    width:575px;
     top:100px;
     align-items: center;
   }
@@ -258,6 +263,8 @@ p{
     border: 2px solid #4a040f;
     align-items: center;
     background-color: #12060A;
+    width: 50px;
+    height: 200px;
   }
   
   p{
@@ -309,18 +316,32 @@ p{
       height: 100vh;
   }
   .compressor-box {
-    position: relative;
-    top: 25rem;
-    left: 4rem;
-    width:50%;
-    border: 0px solid gray;
+    position:relative;
+    top:50px;
     margin: 0 auto;
-    display: inline-flex;
+    width:400px;
+    border: 0px solid gray;
   }
+  /*.compressor-box {
+      display: inline-block;
+    padding: 0.9em;
+    
+    border-radius:5px;
+    height:150px;
+    margin: 0 auto;
+  }*/
 
-  .compressor {
+  /*.compressor {
     margin:0 auto;
     width:800px;
+  }*/
+  .compressor {
+    display: inline-block;
+    padding: 0.2em;
+    
+    border-radius:5px;
+    height:150px;
+    margin: 0 auto;
   }
 
   .compressor p {
@@ -370,5 +391,15 @@ p{
 
           #spectrum {
             height: 5%;
+          }
+          .eq-item {
+            font-size: 10px;
+          }
+          .graphic-eq-box {
+            padding-right: 30px;
+            padding-top: 60px;
+          }
+          .eq {
+            width: 10px;
           }
         }

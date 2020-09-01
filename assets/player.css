@@ -9,7 +9,7 @@ body {
 }
 
  .button-nav {
-   border: #21D89E solid;
+   border: #27614F 1px solid;
    background-color: #372E2E;
    color: #fafafa;
  }
@@ -365,6 +365,10 @@ p{
 
         @media only screen and (max-width: 600px) {
           .nav-link {
-            font-size: 10px;
+            font-size: 7px;
+          }
+
+          #spectrum {
+            height: 5%;
           }
         }

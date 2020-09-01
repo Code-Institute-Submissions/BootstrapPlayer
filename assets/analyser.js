@@ -42,7 +42,7 @@ function draw() {
   //analyserNode.getFloatFrequencyData(dataArray);
   analyserNode.getByteFrequencyData(dataArray);
   //Draw black background
-  canvasCtx.fillStyle = '#080706';
+  canvasCtx.fillStyle = '#372E2E';
   canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
 
   //Draw spectrum

@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+/*var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
@@ -18,4 +18,20 @@ var mySwiper = new Swiper('.swiper-container', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-  })
+  })*/
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });

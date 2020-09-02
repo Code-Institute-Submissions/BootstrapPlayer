@@ -1,7 +1,7 @@
 body {
     /*background-color: #573B76;*/
     background: linear-gradient(-45deg, #941504, #372E2E) fixed;
-    
+    overflow: hidden;
     color: #fafafa;
 }
 #player {

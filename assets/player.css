@@ -398,8 +398,12 @@ p{
           .graphic-eq-box {
             padding-right: 30px;
             padding-top: 60px;
+            
           }
           .eq {
             width: 10px;
+          }
+          .graphic-eq p {
+            font-size: 13px;
           }
         }

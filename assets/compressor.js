@@ -16,7 +16,7 @@ compressor.connect(audioContext.destination);
 var delayAmount = audioContext.createGain();
 var delay = audioContext.createDelay();
 //sound.buffer = AudioBuffer;
-delay.delayTime.value = 0.6;
+delay.delayTime.value = 0;
 delayAmount.gain.value = 0;
 source.connect(delay);
 delay.connect(delayAmount);

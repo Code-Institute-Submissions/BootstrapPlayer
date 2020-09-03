@@ -28,3 +28,4 @@ parametricEQ3.frequency.value = 12000;
 
 source.connect(parametricEQ1);
 parametricEQ3.connect(audioContext.destination);
+

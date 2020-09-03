@@ -114,4 +114,11 @@ $(function() {
         }
     });
 
+    $(".delayDial").knob({
+
+        change: function(valueDelayDial) {
+            delay.delayTime.value = valueDelayDial;
+        }
+    });
+
 });

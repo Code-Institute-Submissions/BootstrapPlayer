@@ -341,7 +341,7 @@ p{
     width:800px;
   }*/
   .compressor {
-    display: inline-block;
+    display: flex;
     padding: 0.2em;
     
     border-radius:5px;
@@ -373,6 +373,10 @@ p{
   
         .attack-box {
             background-color: #12060A;
+        }
+
+        .delay-box {
+          background-color: #12060A;
         }
 
         /*----Analyser----------*/
@@ -410,5 +414,8 @@ p{
           }
           .graphic-eq p {
             font-size: 13px;
+          }
+          .compressor {
+            display: inline;
           }
         }

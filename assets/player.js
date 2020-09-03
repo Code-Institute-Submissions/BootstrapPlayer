@@ -23,16 +23,17 @@ curr_track.crossOrigin = 'anonymous';
 // Define the list of tracks that have to be played 
 let track_list = [
   {
-    name: "Julia Delaney's",
-    artist: "The Bothy Band",
-    image: "Image URL",
-    path: "music/04 - Julia Delaney.MP3"
-  },
-  {
     name: "Ahern's Egg",
     artist: "Peter Browne",
     image: "Image URL",
     path: "music/04 Jigs - Ahern's Egg, The Four Six Jig.mp3"
+  },
+  {
+    name: "Julia Delaney's",
+    artist: "The Bothy Band",
+    image: "Image URL",
+    path: "music/04 - Julia Delaney.MP3"
+    
   },
   {
     name: "Stormy Weather",

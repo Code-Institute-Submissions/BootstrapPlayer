@@ -395,11 +395,11 @@ p{
 
         @media only screen and (max-width: 600px) {
           .nav-link {
-            font-size: 7px;
+            font-size: 10px;
           }
 
           #spectrum {
-            height: 5%;
+            height: 10%;
           }
           .eq-item {
             font-size: 10px;

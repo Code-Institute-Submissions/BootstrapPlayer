@@ -12,7 +12,7 @@ audioEle.preload = 'auto';
 //Create analyser node
 const analyserNode = audioContext.createAnalyser();
 //analyserNode.fftSize = 256;
-analyserNode.fftSize = 4096;
+analyserNode.fftSize = 1024;
 
 const bufferLength = analyserNode.frequencyBinCount;
 const dataArray = new Uint8Array(bufferLength);
@@ -51,7 +51,7 @@ function draw() {
   for (let i = 0; i < bufferLength; i++) {
     const barHeight = (dataArray[i] + 600) * 2;
     canvasCtx.fillStyle = '#fff';
-    canvasCtx.fillRect(posX, canvas.height - barHeight / 2, barWidth, barHeight / 2);
+    canvasCtx.fillRect(posX, canvas.height - barHeight / 3, barWidth, barHeight / 3);
     posX += barWidth + 1;
   }
 };

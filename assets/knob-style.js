@@ -1,6 +1,7 @@
 "use strict";
 
 $(function() {
+    
     $(".freqDial").knob({
 
         release: function(valueFreqDial) {
@@ -122,3 +123,4 @@ $(function() {
     });
 
 });
+

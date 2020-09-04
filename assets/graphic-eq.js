@@ -179,4 +179,5 @@ $(function() {
     };
 
     $('#filter12000Hz').slider(sliderParams12000Hz);
+    
 });

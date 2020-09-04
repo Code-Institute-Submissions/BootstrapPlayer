@@ -93,7 +93,7 @@
             <!--Volume Slider-->
             <div class="slider_container">
                 <i class="fa fa-volume-down"></i>
-                <input type="range" min="1" max="100" value="50" class="volume_slider" onchange="setVolume()">
+                <input type="range" min="1" max="100" value="30" class="volume_slider" onchange="setVolume()">
                 <i class="fa fa-volume-up"></i>
             </div>
         </div>
@@ -274,32 +274,32 @@
         <div class="compressor">
             <div class="eq-item threshold-box shadow">
                 <p class="description">Threshold</p>
-                <input class="thresholdDial" data-min="-100" data-max="10" value="0" data-width="80"
+                <input class="thresholdDial" data-min="-100" data-max="0" value="0" data-width="80"
                     data-step="1" data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
             </div>
 
             <div class="eq-item ratio-box shadow">
                 <p class="description">Ratio</p>
-                <input class="ratioDial" data-min="1" data-max="20" value="12" data-width="80" data-step="1"
+                <input class="ratioDial" data-min="1" data-max="20" value="0" data-width="80" data-step="1"
                     data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
             </div>
 
             <div class="eq-item knee-box shadow">
                 <p class="description">Knee</p>
-                <input class="kneeDial" data-min="0" data-max="40" value="30" data-width="80"
+                <input class="kneeDial" data-min="0" data-max="40" value="0" data-width="80"
                     data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
             </div>
         
         
             <div class="eq-item release-box shadow">
                 <p class="description">Release</p>
-                <input class="releaseDial" data-min="0" data-max="1" value="0.003" data-width="80" data-step="0.1"
+                <input class="releaseDial" data-min="0" data-max="1" value="0" data-width="80" data-step="0.1"
                     data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
             </div>
 
             <div class="eq-item attack-box shadow">
                 <p class="description">Attack</p>
-                <input class="attackDial" data-min="0" data-max="1" value="0.250" data-width="80" data-step="0.01"
+                <input class="attackDial" data-min="0" data-max="1" value="0" data-width="80" data-step="0.01"
                     data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
             </div>
             <div class="eq-item delay-box shadow">
@@ -310,7 +310,7 @@
         </div>
     </div>
 </div>
-    <canvas id="spectrum"></canvas>
+    <canvas class="bg-transparent" id="spectrum"></canvas>
     </div>
     <!--Compressor Section End-->
     

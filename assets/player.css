@@ -244,7 +244,7 @@ p {
 }
 /*--------------------------------------------Graphic EQ---*/
 
-#graphic-eq {
+#graphic-equaliser {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -257,8 +257,9 @@ p {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  
-  
+  height: 100%;
+  margin: 0 auto;
+padding: 0 !important;
 }
 
 .graphic-eq {
@@ -439,11 +440,8 @@ p {
   filter: opacity(80%);
 }
 
-@media only screen and (min-width: 600px) {
+
   
-  
-  .graphic-eq-box {}
-}
 
 @media only screen and (max-width: 600px) {
   .nav-link {

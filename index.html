@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Music Interface</title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
-    
+
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-        <link rel="stylesheet" href="assets/player.css">
+    <link rel="stylesheet" href="assets/player.css">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -48,10 +48,13 @@
         </nav>-->
         <div class="container fixed-top w-100" id="button-nav">
             <div class="row w-100 h-25 mx-auto">
-            <div class="button-nav w-25 h-100" ><a class="nav-link w-100 h-100" href="#player">Player</a></div>
-            <div class="button-nav w-25 h-100" ><a class="nav-link w-100 h-100" href="#parametric-eq">Parametric-eq</a></div>
-            <div class="button-nav w-25 h-100" ><a class="nav-link w-100 h-100" href="#graphic-eq">Graphic-eq</a></div>
-            <div class="button-nav w-25 h-100" ><a class="nav-link w-100 h-100" href="#compressor">Compressor</a></div>
+                <div class="button-nav w-25 h-100"><a class="nav-link w-100 h-100" href="#player">Player</a></div>
+                <div class="button-nav w-25 h-100"><a class="nav-link w-100 h-100"
+                        href="#parametric-eq">Parametric-eq</a></div>
+                <div class="button-nav w-25 h-100"><a class="nav-link w-100 h-100" href="#graphic-eq">Graphic-eq</a>
+                </div>
+                <div class="button-nav w-25 h-100"><a class="nav-link w-100 h-100" href="#compressor">Compressor</a>
+                </div>
             </div>
         </div>
         <!--Navigation End-->
@@ -60,7 +63,7 @@
         <!--Player Start-->
 
         <div class="player">
-           
+
             <!--Display Details-->
             <div class="details">
                 <div class="now-playing">PLAYING x OF y</div>
@@ -97,7 +100,7 @@
                 <i class="fa fa-volume-up"></i>
             </div>
         </div>
-    <!--<canvas id="spectrum"></canvas>-->
+        <!--<canvas id="spectrum"></canvas>-->
     </div>
 
     <!--Player End-->
@@ -105,226 +108,201 @@
     <!--Player Section End-->
 
     <!--Para EQ Section Start-->
-<div id="parametric-eq">
-    
-    <div class="parametric-eq-box">
+    <div id="parametric-eq">
 
-        <div class="parametric-eq">
+        <div class="parametric-eq-box">
+            <p class="para-low text-center">Low</p>
+            <div class="parametric-eq">
+                
+                <div class="eq-item freq-box shadow">
+                    <p class="description">Frequency</p>
+                    <input class="freqDial" data-min="20" data-max="200" value="64" data-width="80"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" />
+                </div>
 
-            <div class="eq-item freq-box shadow">
-                <p class="description">Frequency</p>
-                <input class="freqDial" data-min="20" data-max="200" value="64" data-width="80"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" />
+                <div class="eq-item bandwidth-box shadow">
+                    <p class="description">Bandwidth</p>
+                    <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1" data-width="80"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" />
+                </div>
+
+                <div class="eq-item gain-box shadow">
+                    <p class="description">Gain</p>
+                    <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
+                        data-thickness=".5" data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E"
+                        data-angleOffset="-125" data-angleArc="250" />
+                </div>
+
             </div>
 
-            <div class="eq-item bandwidth-box shadow">
-                <p class="description">Bandwidth</p>
-                <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1"
-                    data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E" />
+
+            <p class="para-mid text-center">Mid</p>
+            <div class="parametric-eq">
+
+                <div class="eq-item freq-box shadow">
+                    <p class="description">Frequency</p>
+                    <input class="freqDial" data-min="20" data-max="20000" value="1000" data-width="80"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" />
+                </div>
+
+                <div class="eq-item bandwidth-box shadow">
+                    <p class="description">Bandwidth</p>
+                    <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1" data-width="80"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" />
+                </div>
+
+                <div class="eq-item gain-box shadow">
+                    <p class="description">Gain</p>
+                    <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
+                        data-thickness=".5" data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E"
+                        data-angleOffset="-125" data-angleArc="250" />
+                </div>
+
             </div>
+            <p class="para-high text-center">High</p>
+            <div class="parametric-eq">
 
-            <div class="eq-item gain-box shadow">
-                <p class="description">Gain</p>
-                <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
-                    data-thickness=".5" data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E"
-                    data-angleOffset="-125" data-angleArc="250" />
+                <div class="eq-item freq-box shadow">
+                    <p class="description">Frequency</p>
+                    <input class="freqDial" data-min="20" data-max="20000" value="12000" data-width="80"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" />
+                </div>
+
+                <div class="eq-item bandwidth-box shadow">
+                    <p class="description">Bandwidth</p>
+                    <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1" data-width="80"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" />
+                </div>
+
+                <div class="eq-item gain-box shadow">
+                    <p class="description">Gain</p>
+                    <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
+                        data-thickness=".5" data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E"
+                        data-angleOffset="-125" data-angleArc="250" />
+                </div>
+
             </div>
-
-        </div>
-
-
-
-        <div class="parametric-eq">
-
-            <div class="eq-item freq-box shadow">
-                <p class="description">Frequency</p>
-                <input class="freqDial" data-min="20" data-max="20000" value="1000" data-width="80"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" />
-            </div>
-
-            <div class="eq-item bandwidth-box shadow">
-                <p class="description">Bandwidth</p>
-                <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1"
-                    data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E" />
-            </div>
-
-            <div class="eq-item gain-box shadow">
-                <p class="description">Gain</p>
-                <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
-                    data-thickness=".5" data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E"
-                    data-angleOffset="-125" data-angleArc="250" />
-            </div>
-
-        </div>
-
-
-    </div>
-    <div class="parametric-eq-box">
-
-
-        <!--<div class="parametric-eq">
-
-            <div class="eq-item freq-box">
-                <p class="description">Frequency</p>
-                <input class="freqDial" data-min="20" data-max="200" value="64" data-width="80"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" />
-            </div>
-
-            <div class="eq-item bandwidth-box">
-                <p class="description">Bandwidth</p>
-                <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1"
-                    data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E" />
-            </div>
-
-            <div class="eq-item gain-box">
-                <p class="description">Gain</p>
-                <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
-                    data-thickness=".5" data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E"
-                    data-angleOffset="-125" data-angleArc="250" />
-            </div>
-
-        </div>-->
-
-
-    </div>
-
-    <div class="parametric-eq-box">
-
-
-        <div class="parametric-eq">
-
-            <div class="eq-item freq-box shadow">
-                <p class="description">Frequency</p>
-                <input class="freqDial" data-min="20" data-max="20000" value="12000" data-width="80"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" />
-            </div>
-
-            <div class="eq-item bandwidth-box shadow">
-                <p class="description">Bandwidth</p>
-                <input class="bandwidthDial" data-min="0.1" data-max="5.0" value="1" data-step="0.1"
-                    data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E" />
-            </div>
-
-            <div class="eq-item gain-box shadow">
-                <p class="description">Gain</p>
-                <input class="gainDial" data-min="-29" data-max="30.0" value="0" data-cursor=true
-                    data-thickness=".5" data-width="80" data-bgColor="#27614F" data-fgColor="#21D89E"
-                    data-angleOffset="-125" data-angleArc="250" />
-            </div>
-
         </div>
 
 
     </div>
-</div>
 
     <!--Para EQ Section End-->
 
     <!--Graphic EQ Section Start-->
-<div id="graphic-eq">
-    <div id="graphic-equaliser">
-        <div id="graphic-eq">
-            <div class="graphic-eq-box">
-            
-            <div class="graphic-eq">
-                <div class="eq-band">
-                <div class="eq shadow" id="filter64Hz"></div>
-                <p>64Hz</p>
-                </div>
-                  <div class="eq-band">
-                <div class="eq shadow" id="filter150Hz"></div>
-                <p>150Hz</p>
-                </div>
-                  <div class="eq-band">
-                <div class="eq shadow" id="filter350Hz"></div>
-                <p>350Hz</p>
-                </div>
-                  <div class="eq-band">
-                <div class="eq shadow" id="filter1000Hz"></div>
-                <p>1kHz</p>
-                </div>
-                  <div class="eq-band">
-                <div class="eq shadow" id="filter2000Hz"></div>
-                <p>2kHz</p>
-                </div>
-                  <div class="eq-band">
-                <div class="eq shadow" id="filter6000Hz"></div>
-                <p>6kHz</p>
-                </div>
-                  <div class="eq-band">
-                <div class="eq shadow" id="filter12000Hz"></div>
-                <p>12kHz</p>
-                </div>
-                </div>
-                    
-             
-            </div>
+    <div id="graphic-eq">
+        <div id="graphic-equaliser">
+            <div id="graphic-eq">
+                <div class="graphic-eq-box">
 
-            
+                    <div class="graphic-eq">
+                        <div class="eq-band">
+                            <div class="eq shadow" id="filter64Hz"></div>
+                            <p>64Hz</p>
+                        </div>
+                        <div class="eq-band">
+                            <div class="eq shadow" id="filter150Hz"></div>
+                            <p>150Hz</p>
+                        </div>
+                        <div class="eq-band">
+                            <div class="eq shadow" id="filter350Hz"></div>
+                            <p>350Hz</p>
+                        </div>
+                        <div class="eq-band">
+                            <div class="eq shadow" id="filter1000Hz"></div>
+                            <p>1kHz</p>
+                        </div>
+                        <div class="eq-band">
+                            <div class="eq shadow" id="filter2000Hz"></div>
+                            <p>2kHz</p>
+                        </div>
+                        <div class="eq-band">
+                            <div class="eq shadow" id="filter6000Hz"></div>
+                            <p>6kHz</p>
+                        </div>
+                        <div class="eq-band">
+                            <div class="eq shadow" id="filter12000Hz"></div>
+                            <p>12kHz</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
     </div>
-</div>
 
     <!--Graphic EQ Section End-->
 
     <!--Compressor Section Start-->
-<div id="compressor">
-    
-    <div class="compressor-box">
-            
-        <div class="compressor">
-            <div class="eq-item threshold-box shadow">
-                <p class="description">Threshold</p>
-                <input class="thresholdDial" data-min="-100" data-max="0" value="0" data-width="80"
-                    data-step="1" data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
-            </div>
+    <div id="compressor">
 
-            <div class="eq-item ratio-box shadow">
-                <p class="description">Ratio</p>
-                <input class="ratioDial" data-min="1" data-max="20" value="0" data-width="80" data-step="1"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
-            </div>
+        <div class="compressor-box">
 
-            <div class="eq-item knee-box shadow">
-                <p class="description">Knee</p>
-                <input class="kneeDial" data-min="0" data-max="40" value="0" data-width="80"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
-            </div>
-        
-        
-            <div class="eq-item release-box shadow">
-                <p class="description">Release</p>
-                <input class="releaseDial" data-min="0" data-max="1" value="0" data-width="80" data-step="0.1"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
-            </div>
+            <div class="compressor">
+                <div class="eq-item threshold-box shadow">
+                    <p class="description">Threshold</p>
+                    <input class="thresholdDial" data-min="-100" data-max="0" value="0" data-width="80" data-step="1"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2"
+                        data-displayPrevious=true />
+                </div>
 
-            <div class="eq-item attack-box shadow">
-                <p class="description">Attack</p>
-                <input class="attackDial" data-min="0" data-max="1" value="0" data-width="80" data-step="0.01"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
-            </div>
-            <div class="eq-item delay-box shadow">
-                <p class="description">Delay</p>
-                <input class="delayDial" data-min="0" data-max="1" value="0" data-width="80" data-step="0.1"
-                    data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true/>
+                <div class="eq-item ratio-box shadow">
+                    <p class="description">Ratio</p>
+                    <input class="ratioDial" data-min="1" data-max="20" value="0" data-width="80" data-step="1"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2"
+                        data-displayPrevious=true />
+                </div>
+
+                <div class="eq-item knee-box shadow">
+                    <p class="description">Knee</p>
+                    <input class="kneeDial" data-min="0" data-max="40" value="0" data-width="80" data-bgColor="#27614F"
+                        data-fgColor="#21D89E" data-skin="tron" data-thickness=".2" data-displayPrevious=true />
+                </div>
+
+
+                <div class="eq-item release-box shadow">
+                    <p class="description">Release</p>
+                    <input class="releaseDial" data-min="0" data-max="1" value="0" data-width="80" data-step="0.1"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2"
+                        data-displayPrevious=true />
+                </div>
+
+                <div class="eq-item attack-box shadow">
+                    <p class="description">Attack</p>
+                    <input class="attackDial" data-min="0" data-max="1" value="0" data-width="80" data-step="0.01"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2"
+                        data-displayPrevious=true />
+                </div>
+                <div class="eq-item delay-box shadow">
+                    <p class="description">Delay</p>
+                    <input class="delayDial" data-min="0" data-max="1" value="0" data-width="80" data-step="0.1"
+                        data-bgColor="#27614F" data-fgColor="#21D89E" data-skin="tron" data-thickness=".2"
+                        data-displayPrevious=true />
+                </div>
             </div>
         </div>
     </div>
-</div>
     <canvas class="bg-transparent" id="spectrum"></canvas>
     </div>
     <!--Compressor Section End-->
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
         integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
         integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js" integrity="sha512-NhRZzPdzMOMf005Xmd4JonwPftz4Pe99mRVcFeRDcdCtfjv46zPIi/7ZKScbpHD/V0HB1Eb+ZWigMqw94VUVaw==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"
+        integrity="sha512-NhRZzPdzMOMf005Xmd4JonwPftz4Pe99mRVcFeRDcdCtfjv46zPIi/7ZKScbpHD/V0HB1Eb+ZWigMqw94VUVaw=="
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/player.js"></script>
     <script src="assets/para-eq.js"></script>

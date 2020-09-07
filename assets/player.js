@@ -20,6 +20,7 @@ let updateTimer;
 // Create the audio element for the player 
 let curr_track = document.createElement('audio');
 curr_track.crossOrigin = 'anonymous';
+
 // Define the list of tracks that have to be played 
 let track_list = [
   {
@@ -33,7 +34,7 @@ let track_list = [
     artist: "The Bothy Band",
     image: "Image URL",
     path: "music/04 - Julia Delaney.MP3"
-    
+
   },
   {
     name: "Stormy Weather",
@@ -146,6 +147,7 @@ function setVolume() {
   // Set the volume according to the 
   // percentage of the volume slider set 
   curr_track.volume = volume_slider.value / 100;
+
 }
 
 function seekUpdate() {
@@ -178,14 +180,14 @@ loadTrack(track_index);
 
 (function () {
   if (typeof EventTarget !== "undefined") {
-      let func = EventTarget.prototype.addEventListener;
-      EventTarget.prototype.addEventListener = function (type, fn, capture) {
-          this.func = func;
-          if(typeof capture !== "boolean"){
-              capture = capture || {};
-              capture.passive = false;
-          }
-          this.func(type, fn, capture);
-      };
+    let func = EventTarget.prototype.addEventListener;
+    EventTarget.prototype.addEventListener = function (type, fn, capture) {
+      this.func = func;
+      if (typeof capture !== "boolean") {
+        capture = capture || {};
+        capture.passive = false;
+      }
+      this.func(type, fn, capture);
+    };
   };
 }());

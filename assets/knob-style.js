@@ -1,10 +1,10 @@
 "use strict";
 
-$(function() {
-    
+$(function () {
+
     $(".freqDial").knob({
 
-        release: function(valueFreqDial) {
+        release: function (valueFreqDial) {
             parametricEQ1.frequency.value = valueFreqDial;
 
 
@@ -13,7 +13,7 @@ $(function() {
 
     $(".bandwidthDial").knob({
 
-        release: function(valueBandwidthDial) {
+        release: function (valueBandwidthDial) {
             parametricEQ1.Q.value = valueBandwidthDial;
 
         }
@@ -21,7 +21,7 @@ $(function() {
 
     $(".gainDial").knob({
 
-        release: function(valueGainDial) {
+        release: function (valueGainDial) {
             parametricEQ1.gain.value = valueGainDial;
 
 
@@ -30,7 +30,7 @@ $(function() {
 
     $(".freqDial").knob({
 
-        change: function(valueFreqDial) {
+        change: function (valueFreqDial) {
             parametricEQ2.frequency.value = valueFreqDial;
 
 
@@ -39,7 +39,7 @@ $(function() {
 
     $(".bandwidthDial").knob({
 
-        change: function(valueBandwidthDial) {
+        change: function (valueBandwidthDial) {
             parametricEQ2.Q.value = valueBandwidthDial;
 
         }
@@ -47,7 +47,7 @@ $(function() {
 
     $(".gainDial").knob({
 
-        change: function(valueGainDial) {
+        change: function (valueGainDial) {
             parametricEQ2.gain.value = valueGainDial;
 
 
@@ -56,7 +56,7 @@ $(function() {
 
     $(".freqDial").knob({
 
-        change: function(valueFreqDial) {
+        change: function (valueFreqDial) {
             parametricEQ3.frequency.value = valueFreqDial;
 
 
@@ -65,7 +65,7 @@ $(function() {
 
     $(".bandwidthDial").knob({
 
-        change: function(valueBandwidthDial) {
+        change: function (valueBandwidthDial) {
             parametricEQ3.Q.value = valueBandwidthDial;
 
         }
@@ -73,51 +73,51 @@ $(function() {
 
     $(".gainDial").knob({
 
-        change: function(valueGainDial) {
+        change: function (valueGainDial) {
             parametricEQ3.gain.value = valueGainDial;
 
 
         }
     });
-    
+
     $(".thresholdDial").knob({
 
-        change: function(valueThresholdDial) {
+        change: function (valueThresholdDial) {
             compressor.threshold.value = valueThresholdDial;
         }
     });
 
     $(".ratioDial").knob({
 
-        change: function(valueRatioDial) {
+        change: function (valueRatioDial) {
             compressor.ratio.value = valueRatioDial;
         }
     });
 
     $(".kneeDial").knob({
 
-        change: function(valueKneeDial) {
+        change: function (valueKneeDial) {
             compressor.knee.value = valueKneeDial;
         }
     });
 
     $(".releaseDial").knob({
 
-        change: function(valueReleaseDial) {
+        change: function (valueReleaseDial) {
             compressor.release.value = valueReleaseDial;
         }
     });
 
     $(".attackDial").knob({
 
-        change: function(valueAttackDial) {
+        change: function (valueAttackDial) {
             compressor.attack.value = valueAttackDial;
         }
     });
 
     $(".delayDial").knob({
 
-        change: function(valueDelayDial) {
+        change: function (valueDelayDial) {
             delay.delayTime.value = valueDelayDial;
         }
     });

@@ -54,13 +54,13 @@ filter5.connect(filter6);
 filter6.connect(filter7);
 filter7.connect(audioContext.destination);
 
-$(function() {
+$(function () {
 
-    
 
-    
 
-    
+
+
+
 
     var sliderParams64Hz = {
         'orientation': "vertical",
@@ -69,7 +69,7 @@ $(function() {
         'max': 30,
         'animate': true,
         'step': 0.01,
-        'slide': function(event, ui) {
+        'slide': function (event, ui) {
             window.filter1.gain.value = ui.value;
 
         }
@@ -84,7 +84,7 @@ $(function() {
         'max': 30,
         'animate': true,
         'step': 0.01,
-        'slide': function(event, ui) {
+        'slide': function (event, ui) {
             window.filter2.gain.value = ui.value;
 
         }
@@ -105,7 +105,7 @@ $(function() {
         'max': 30,
         'animate': true,
         'step': 0.01,
-        'slide': function(event, ui) {
+        'slide': function (event, ui) {
             window.filter3.gain.value = ui.value;
 
         }
@@ -122,7 +122,7 @@ $(function() {
         'max': 30,
         'animate': true,
         'step': 0.01,
-        'slide': function(event, ui) {
+        'slide': function (event, ui) {
             window.filter4.gain.value = ui.value;
 
         }
@@ -140,7 +140,7 @@ $(function() {
         'max': 30,
         'animate': true,
         'step': 0.01,
-        'slide': function(event, ui) {
+        'slide': function (event, ui) {
             window.filter5.gain.value = ui.value;
 
         }
@@ -156,7 +156,7 @@ $(function() {
         'max': 30,
         'animate': true,
         'step': 0.01,
-        'slide': function(event, ui) {
+        'slide': function (event, ui) {
             window.filter6.gain.value = ui.value;
 
         }
@@ -172,12 +172,12 @@ $(function() {
         'max': 30,
         'animate': true,
         'step': 0.01,
-        'slide': function(event, ui) {
+        'slide': function (event, ui) {
             window.filter7.gain.value = ui.value;
 
         }
     };
 
     $('#filter12000Hz').slider(sliderParams12000Hz);
-    
+
 });

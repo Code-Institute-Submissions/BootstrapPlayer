@@ -24,45 +24,10 @@
 
         <!--Navigation Start-->
 
-        <!--<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
-            <a class="navbar-brand" href="#"><img src=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#player">Player</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#parametric-eq">Parametric-Equalizer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#graphic-eq">Graphic Equalizer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#compressor">Compressor</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>-->
-        <!--<div class="container fixed-top w-100" id="button-nav">
-            <div class="row w-100 h-25 mx-auto">
-                <div class="button-nav w-25 h-100"><a class="nav-link w-100 h-100" href="#player">Player</a></div>
-                <div class="button-nav w-25 h-100"><a class="nav-link w-100 h-100"
-                        href="#parametric-eq">Parametric-eq</a></div>
-                <div class="button-nav w-25 h-100"><a class="nav-link w-100 h-100"
-                        href="#graphic-equaliser">Graphic-eq</a>
-                </div>
-                <div class="button-nav w-25 h-100"><a class="nav-link w-100 h-100" href="#compressor">Compressor</a>
-                </div>
-            </div>
-        </div>-->
-
-        <a href="#parametric-eq" class="btn btn-info" role="button">Controls</a>
+        <div class="controls-nav-btn text-center">
+            <a href="#parametric-eq" class="btn" role="button">Controls</a>
+        </div>
         <!--Navigation End-->
-
 
         <!--Player Start-->
 
@@ -108,12 +73,14 @@
     </div>
 
     <!--Player End-->
-    
+
     <!--Player Section End-->
 
     <!--Para EQ Section Start-->
     <div id="parametric-eq">
-        <a href="#player" class="btn btn-info" role="button">Player</a>
+        <div class="player-nav-btn text-center sticky-top">
+            <a href="#player" class="btn" role="button">Player</a>
+        </div>
         <div class="parametric-eq-box">
             <p class="para-low text-center">Low</p>
             <div class="parametric-eq">
@@ -187,15 +154,10 @@
 
             </div>
         </div>
-    
-
-
 
         <!--Para EQ Section End-->
 
         <!--Graphic EQ Section Start-->
-
-
 
         <div class="graphic-eq-box">
 
@@ -229,19 +191,10 @@
                     <p>12kHz</p>
                 </div>
             </div>
-
-
         </div>
-
-
-
-
-
         <!--Graphic EQ Section End-->
 
         <!--Compressor Section Start-->
-
-
         <div class="compressor-box">
 
             <div class="compressor">
@@ -287,11 +240,10 @@
                 </div>
             </div>
         </div>
-    
-    
-    <canvas class="bg-transparent" id="spectrum"></canvas>
+
+        <canvas class="bg-transparent" id="spectrum"></canvas>
     </div>
-    
+
     <!--Compressor Section End-->
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"

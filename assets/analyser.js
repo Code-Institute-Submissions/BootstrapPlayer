@@ -1,17 +1,12 @@
 const audioEle = new Audio();
 audioEle.crossOrigin = 'anonymous';
 curr_track.crossOrigin = 'anonymous';
-//audioEle.src = '04 - The Maids of Michelstown.mp3';//insert file name here
-//audioEle.src = "https://edge.audioxi.com/98";
 audioEle.src = "";
 audioEle.autoplay = true;
 audioEle.preload = 'auto';
 
-//const audioSourceNode = audioContext.createMediaElementSource(curr_track);
-
 //Create analyser node
 const analyserNode = audioContext.createAnalyser();
-//analyserNode.fftSize = 256;
 analyserNode.fftSize = 1024;
 
 const bufferLength = analyserNode.frequencyBinCount;
@@ -22,11 +17,7 @@ source.connect(analyserNode);
 analyserNode.connect(audioContext.destination);
 
 //Create 2D canvas
-//const canvas = document.createElement('canvas');
 const canvas = document.getElementById('spectrum');
-//canvas.style.position = 'absolute';
-//canvas.style.top = 0;
-//canvas.style.left = 0;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 document.body.appendChild(canvas);
@@ -39,7 +30,6 @@ function draw() {
   requestAnimationFrame(draw);
 
   //Get spectrum data
-  //analyserNode.getFloatFrequencyData(dataArray);
   analyserNode.getByteFrequencyData(dataArray);
   //Draw black background
   canvasCtx.fillStyle = 'rgba(55, 46, 46)';

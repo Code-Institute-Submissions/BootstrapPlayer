@@ -70,8 +70,6 @@ function loadTrack(track_index) {
   curr_track.addEventListener("ended", nextTrack);
 }
 
-
-
 // Functiom to reset all values to their default 
 function resetValues() {
   curr_time.textContent = "00:00";
@@ -147,7 +145,6 @@ function setVolume() {
   // Set the volume according to the 
   // percentage of the volume slider set 
   curr_track.volume = volume_slider.value / 100;
-
 }
 
 function seekUpdate() {

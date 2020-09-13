@@ -263,7 +263,7 @@ p {
   margin: 0 auto;
   padding: 0 !important;
   position: relative;
-  bottom: 30%;
+  bottom: 40%;
 }
 
 .graphic-eq {
@@ -351,21 +351,29 @@ p {
 
 /*--Compressor---*/
 
-#compressor {
+/*#compressor {
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
+}*/
 
-.compressor-box {
+/*.compressor-box {
   height: 60%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}*/
+
+.compressor-box {
+  position: relative;
+  margin: 0 auto;
+  bottom: 73%;
+  left: 34%;
+  width: 25%;
 }
 
 .compressor {
@@ -373,6 +381,7 @@ p {
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
 /*.compressor-box {
@@ -452,12 +461,45 @@ p {
   #spectrum {
     height: 10%;
   }
+
+  #player {
+    height: 100%;
+  }
+  #parametric-eq {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .parametric-eq-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  width: max-content;
+    margin: 0 auto;
+    right: 0;
+  }
+  .parametric-eq {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
   .eq-item {
     font-size: 10px;
   }
   .graphic-eq-box {
-    padding-right: 30px;
-    padding-top: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
   }
   .eq {
     width: 10px;
@@ -466,9 +508,21 @@ p {
     font-size: 13px;
   }
   .compressor {
-    display: inline;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
   }
   .compressor-box {
-    display: inline;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    left: 0;
+    margin-top: 10%;
   }
 }

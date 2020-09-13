@@ -169,16 +169,17 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 #parametric-eq {
   height: 100vh;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 .parametric-eq-box {
   position: relative;
-  width: 20%;
+  right: 35%;
+  top: 10%;
   margin: 0 auto;
-  width: 30%;
+  width: 25%;
 }
 
 .parametric-eq {
@@ -261,6 +262,8 @@ p {
   height: 100%;
   margin: 0 auto;
   padding: 0 !important;
+  position: relative;
+  bottom: 30%;
 }
 
 .graphic-eq {

@@ -20,6 +20,7 @@ body {
 
 .btn {
   font-size: x-large;
+  font-weight: 600;
 }
 
 .controls-nav-btn {
@@ -56,7 +57,7 @@ body {
 }
 
 .player {
-  height: 95vh;
+  height: 78vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -390,6 +391,9 @@ p {
   #player {
     height: 100%;
   }
+  .player {
+    height: 95vh;
+  }
   #parametric-eq {
     height: 100%;
     display: flex;
@@ -461,6 +465,10 @@ p {
 
 
 @media only screen and (max-width: 600px) {
+
+  .player {
+    height: 95vh;
+  }
   .nav-link {
     font-size: 8px;
   }

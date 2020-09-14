@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  /*background: linear-gradient(-45deg, #941504, #372E2E) fixed;*/
+  background: linear-gradient(45deg, #111D10, #788e75, #a6b6a4) fixed;
   color: #fafafa;
 }
 
@@ -16,9 +16,11 @@ body {
   height: 736px;
   background: linear-gradient(-45deg, #941504, #372E2E) fixed;
   margin: 0 auto;
-  overflow-y:auto
+  overflow-y:auto;
 }
-
+.player-container::-webkit-scrollbar {
+  display: none;
+}
 .player-nav-btn {
   background-color: #c3c9c5;
   color: #372E2E;
@@ -47,8 +49,8 @@ body {
 
 .track-art { 
   margin: 5px; 
-  height: 175px; 
-  width: 175px; 
+  height: 250px; 
+  width: 250px; 
   background-image: URL( 
      "https://source.unsplash.com/Qrspubmx6kE/640x360"); 
   background-size: cover; 
@@ -212,7 +214,6 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   align-items: center;
   position: relative;
   margin: 0 auto;
-  
 }
 
 .parametric-eq {
@@ -402,13 +403,15 @@ p {
 /*----Analyser----------*/
 
 #spectrum {
-  bottom: 0;
-  width: 100%;
+ bottom: 0;
+  position: fixed;
   height: 20%;
   margin: 0 auto;
-  position: fixed;
+  align-items: center;
+  justify-content: center;
   z-index: -10;
-  filter: opacity(80%);
+  width: 100%;
+  
 }
 
 /*-----------MEDIA QUERIES------------*/

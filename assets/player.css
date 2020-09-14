@@ -184,7 +184,6 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 .parametric-eq-box {
   position: relative;
   right: 35%;
- 
   margin: 0 auto;
   width: 25%;
 }
@@ -252,7 +251,6 @@ p {
   flex-direction: column;
   justify-content: center;
 }
-
 
 .graphic-eq-box {
   display: flex;
@@ -387,11 +385,12 @@ p {
   z-index: -10;
   filter: opacity(80%);
 }
+
 /*-----------MEDIA QUERIES------------*/
 
 /*------MEDIUM-----------*/
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #player {
     height: 100%;
   }
@@ -465,15 +464,11 @@ p {
   .compressor-title {
     display: none;
   }
-  }
-
-
-
+}
 
 /*------SMALL/MEDIUM-----*/
 
 @media only screen and (max-width: 600px) {
-
   .player {
     height: 95vh;
   }
@@ -526,7 +521,6 @@ p {
   }
   .graphic-eq p {
     font-size: 13px;
-    
   }
   .compressor {
     display: flex;

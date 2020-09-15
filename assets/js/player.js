@@ -42,6 +42,18 @@ let track_list = [
     image: "images/stage.jpg",
     path: "music/06 Reels - Stormy Weather (Johnny Doherty Version), Pedalling Patterns, The Mountain Top.mp3",
   },
+  {
+    name: "Upbeat Party",
+    artist: "Scott Holmes",
+    image: "images/martin-engel-grafiker-hamburg-KLFB1AEPLwA-unsplash.jpg",
+    path: "music/Scott_Holmes_-_04_-_Upbeat_Party.mp3",
+  },
+  {
+    name: "Linertie",
+    artist: "Yarostan",
+    image: "images/naomi-tamar-4AY3Nf0SniE-unsplash.jpg",
+    path: "music/Yarostan_-_04_-_Linertie_du_mouvement.mp3",
+  },
 ];
 
 function loadTrack(track_index) {

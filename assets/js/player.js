@@ -26,20 +26,20 @@ let track_list = [
   {
     name: "Ahern's Egg",
     artist: "Peter Browne",
-    image: "Image URL",
+    image: "https://source.unsplash.com/Qrspubmx6kE/640x360",
     path: "music/04 Jigs - Ahern's Egg, The Four Six Jig.mp3"
   },
   {
     name: "Julia Delaney's",
     artist: "The Bothy Band",
-    image: "Image URL",
+    image: "images/Bottle.jpg",
     path: "music/04 - Julia Delaney.MP3"
 
   },
   {
     name: "Stormy Weather",
     artist: "Peter Browne",
-    image: "Image URL",
+    image: "images/stage.jpg",
     path: "music/06 Reels - Stormy Weather (Johnny Doherty Version), Pedalling Patterns, The Mountain Top.mp3",
   },
 ];

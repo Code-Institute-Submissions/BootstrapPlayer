@@ -119,7 +119,7 @@ The Web Audio API has many more options available for a complete audio interface
   
 * Bug: WARNING "Added non-passive event listener to a scroll-blocking 'touchstart' event.
 Consider marking event handler as 'passive' to make the page more responsive".
-* Solution: A polyfill  added to player.js-line 192 - "(function () {
+* Solution: A polyfill  added to player.js-line 192 - "    (function () {
   if (typeof EventTarget !== "undefined") {
     let func = EventTarget.prototype.addEventListener;
     EventTarget.prototype.addEventListener = function (type, fn, capture) {
@@ -130,7 +130,8 @@ Consider marking event handler as 'passive' to make the page more responsive".
       }"
       this.func(type, fn, capture);
     };
-  };-- This was a warning regarding the responsiveness of the controls with touch-screen scrollability.
+  };
+  -- This was a warning regarding the responsiveness of the controls with touch-screen scrollability.
 
 
 **Graphic Equaliser**

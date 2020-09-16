@@ -1,7 +1,7 @@
 
 # BootstrapPlayer
 
-![iamresponsive iamge3](https://github.com/pbtrad/BootstrapPlayer/blob/master/iamresponsivescreenshot3.png)
+![iamresponsive iamge3](https://github.com/pbtrad/BootstrapPlayer/blob/master/assets/images/iamresponsivescreenshot3.png)
 
 
 Bootstrap player is a music player with a comprehensive range of audio manipulation options using the [Web Audio API](https://www.w3.org/TR/webaudio/), for audiophiles, sound engineers and those who just want to tweek the music they listen to.
@@ -32,20 +32,20 @@ The player and all the options are contained within a mobile phone size div, a d
 **Parametric Equaliser**
 
 
-![para-eq-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/paraeqscreenshot.png)
+![para-eq-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/assets/images/paraeqscreenshot.png)
 
 * A parametric equaliser allows the user to modify three aspects of the audio, the frequency, gain and bandwidth.  The website gives the option for 3 single band parametric equalisers-High, Mid, Low.
 A large range of sound control is possible with the parametric equaliser.  The knob design uses [JQuery-Knob](https://github.com/aterrien/jQuery-Knob).
 
 **Graphic Equaliser**
 
-![graphic-eg-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/graphic-eq-screenshot.png)
+![graphic-eg-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/assets/images/graphic-eq-screenshot.png)
 
 * Unlike a parametric equaliser, a graphic equaliser allows the user to modify only fixed frequencies, but the advantage is that you can cut or boost the level on equally spaced frequencies. The website contains a seven band graphic equaliser built using the range slider options from [JQueryUI](https://jqueryui.com/). The frequencies the user is able to change ranges from a low of high
 
 **Compressor**
 
-![para-eq-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/compressorshot.png)
+![para-eq-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/assets/images/compressorshot.png)
 
 *The Web Audio API has availabe to developers a Dynamics Compressor Node.  A compressor attenuates an audio signal when its decibel level exceeds a specific threshold.  The Dynamics Compressor Node is an object that provides five properties all of which are provided on the interface.
 
@@ -75,7 +75,7 @@ The delay option provides an echoing delay to the audio adding some reverb.  Thi
 
 **Spectrum Analyser**
 
-![analyser-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/analysershot.png)
+![analyser-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/assets/images/analysershot.png)
 
 The website features a working Spectrum Analyser for an audiovisual animation.
 

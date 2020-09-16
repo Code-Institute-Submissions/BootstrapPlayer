@@ -1,4 +1,8 @@
+
 # BootstrapPlayer
+
+![iamresponsive iamge3](https://github.com/pbtrad/BootstrapPlayer/blob/master/iamresponsivescreenshot3.png)
+
 
 Bootstrap player is a music player with a comprehensive range of audio manipulation options using the [Web Audio API](https://www.w3.org/TR/webaudio/), for audiophiles, sound engineers and those who just want to tweek the music they listen to.
 
@@ -27,14 +31,21 @@ The player and all the options are contained within a mobile phone size div, a d
 
 **Parametric Equaliser**
 
+
+![para-eq-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/paraeqscreenshot.png)
+
 * A parametric equaliser allows the user to modify three aspects of the audio, the frequency, gain and bandwidth.  The website gives the option for 3 single band parametric equalisers-High, Mid, Low.
 A large range of sound control is possible with the parametric equaliser.  The knob design uses [JQuery-Knob](https://github.com/aterrien/jQuery-Knob).
 
 **Graphic Equaliser**
 
+![graphic-eg-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/graphic-eq-screenshot.png)
+
 * Unlike a parametric equaliser, a graphic equaliser allows the user to modify only fixed frequencies, but the advantage is that you can cut or boost the level on equally spaced frequencies. The website contains a seven band graphic equaliser built using the range slider options from [JQueryUI](https://jqueryui.com/). The frequencies the user is able to change ranges from a low of high
 
 **Compressor**
+
+![para-eq-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/compressorshot.png)
 
 *The Web Audio API has availabe to developers a Dynamics Compressor Node.  A compressor attenuates an audio signal when its decibel level exceeds a specific threshold.  The Dynamics Compressor Node is an object that provides five properties all of which are provided on the interface.
 
@@ -63,6 +74,8 @@ Sets the attack speed of compressed effect.
 The delay option provides an echoing delay to the audio adding some reverb.  This effect is created using the Web Audio API Delay Node.  It is contained within the compressor box for design purposes.
 
 **Spectrum Analyser**
+
+![analyser-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/analysershot.png)
 
 The website features a working Spectrum Analyser for an audiovisual animation.
 
@@ -110,7 +123,7 @@ The Web Audio API has many more options available for a complete audio interface
 
 3. **javaScript** : Chrome Dev Tools was the primary source for javaScript testing as it's console is the best for debugging.  The code was also run through https://codebeautify.org/jsvalidate, a javaScript code validator.  The console is showing no errors or warnings after much debugging.
 
-** Major javaScript Bugs, Errors and Warnings**
+**Major javaScript Bugs, Errors and Warnings**
 
 * Bug: WARNING "the audiocontext was not allowed to start. it must be resumed (or created) after a user gesture on the page. https://goo.gl/7k7wlu".
 * Solution: A polyfill added to the Play button (player.js-line 106) - "if (audioContext.state !== 'running') {
@@ -155,8 +168,10 @@ The knobs made using jQuery-Knob are also canvas based and it is very difficult 
 2. Files uploaded from Visual Studio Code through Git to Github repository at https://github.com/pbtrad/BootstrapPlayer.
 
 3. To publish the website and see it on the web, I went to Settings, then to GitHub Pages, selected Master Branch as a publishing source and saved it. The page was published and the URL made available; Your site is published at https://pbtrad.github.io/BootstrapPlayer/#player.
-
-4. In order to run the code on a local machine, you would go to my Github repository at  https://github.com/pbtrad, just above the file click  "Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file. To continue cloning steps to take are:
+ 
+**How users can deploy to a local system**
+ 
+In order to run the code on a local machine, you would go to my Github repository at  https://github.com/pbtrad, just above the file click  "Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file. To continue cloning steps to take are:
 
 * Open Git Bash
 * Change the current working directory to the location where you want the cloned directory to be made.

@@ -31,6 +31,9 @@ The player and all the options are contained within a mobile phone size div, a d
 
 **Parametric Equaliser**
 
+
+![para-eq-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/paraeqscreenshot.png)
+
 * A parametric equaliser allows the user to modify three aspects of the audio, the frequency, gain and bandwidth.  The website gives the option for 3 single band parametric equalisers-High, Mid, Low.
 A large range of sound control is possible with the parametric equaliser.  The knob design uses [JQuery-Knob](https://github.com/aterrien/jQuery-Knob).
 

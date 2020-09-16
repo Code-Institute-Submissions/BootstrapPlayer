@@ -1,3 +1,5 @@
+//Graphic equaliser BiquadFilters created
+
 var filter1 = audioContext.createBiquadFilter();
 filter1.type = "peaking"; //______Do not let user modify. This is a graphic EQ!
 filter1.gain.value = 0;

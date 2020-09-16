@@ -1,5 +1,7 @@
 "use strict";
 
+//Knobs for parametric equaliser 
+
 $(function () {
 
     $(".freqDial").knob({
@@ -55,6 +57,8 @@ $(function () {
             parametricEQ3.gain.value = valueGainDial;
         }
     });
+
+    //Compressor knobs
 
     $(".thresholdDial").knob({
         change: function (valueThresholdDial) {

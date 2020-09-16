@@ -1,5 +1,7 @@
+//DynamicsCompressor Node created
+
 var compressor = audioContext.createDynamicsCompressor();
-//source.buffer = audioBuffer;
+
 source.connect(compressor);
 compressor.threshold.value = -40;
 compressor.ratio.value = 12;
@@ -12,16 +14,12 @@ compressor.connect(audioContext.destination);
 
 /*---Delay---*/
 
-//var sound = audioContext.createBufferSource();
 var delayAmount = audioContext.createGain();
 var delay = audioContext.createDelay();
-//sound.buffer = AudioBuffer;
 delay.delayTime.value = 0;
 delayAmount.gain.value = 0;
 source.connect(delay);
 delay.connect(delayAmount);
 delayAmount.connect(delay);
 delayAmount.connect(audioContext.destination);
-//source.connect (audioContext.destination);
-//source.start(audioContext.currentTime);
 delay.connect(audioContext.destination);

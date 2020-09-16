@@ -1,7 +1,13 @@
+//AudioContext created
+
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext = new AudioContext();
 
+//Source connected
+
 var source = audioContext.createMediaElementSource(curr_track);
+
+//BiquadFilters created
 var parametricEQ1 = audioContext.createBiquadFilter();
 parametricEQ1.type = "peaking";
 parametricEQ1.gain.value = 0; // allow the user to change this

@@ -187,9 +187,6 @@ function seekUpdate() {
 // Load the first track in the tracklist 
 loadTrack(track_index);
 
-//Polyfill for audioContext(resume())
-function mousePressed() { getAudioContext().resume() }
-
 //Polyfill to make event handler as 'passive'
 
 (function () {

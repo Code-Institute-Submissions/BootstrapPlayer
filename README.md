@@ -75,6 +75,8 @@ The delay option provides an echoing delay to the audio adding some reverb.  Thi
 
 **Spectrum Analyser**
 
+![analyser-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/analysershot.png)
+
 The website features a working Spectrum Analyser for an audiovisual animation.
 
 **Features Left to Implement**

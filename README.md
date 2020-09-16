@@ -39,6 +39,8 @@ A large range of sound control is possible with the parametric equaliser.  The k
 
 **Graphic Equaliser**
 
+![graphic-eg-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/graphic-eq-screenshot.png)
+
 * Unlike a parametric equaliser, a graphic equaliser allows the user to modify only fixed frequencies, but the advantage is that you can cut or boost the level on equally spaced frequencies. The website contains a seven band graphic equaliser built using the range slider options from [JQueryUI](https://jqueryui.com/). The frequencies the user is able to change ranges from a low of high
 
 **Compressor**

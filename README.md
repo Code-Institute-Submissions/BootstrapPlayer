@@ -168,8 +168,10 @@ The knobs made using jQuery-Knob are also canvas based and it is very difficult 
 2. Files uploaded from Visual Studio Code through Git to Github repository at https://github.com/pbtrad/BootstrapPlayer.
 
 3. To publish the website and see it on the web, I went to Settings, then to GitHub Pages, selected Master Branch as a publishing source and saved it. The page was published and the URL made available; Your site is published at https://pbtrad.github.io/BootstrapPlayer/#player.
-
-4. In order to run the code on a local machine, you would go to my Github repository at  https://github.com/pbtrad, just above the file click  "Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file. To continue cloning steps to take are:
+ 
+**How users can deploy to a local system**
+ 
+In order to run the code on a local machine, you would go to my Github repository at  https://github.com/pbtrad, just above the file click  "Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file. To continue cloning steps to take are:
 
 * Open Git Bash
 * Change the current working directory to the location where you want the cloned directory to be made.

@@ -189,6 +189,8 @@ All media-images and tracks are open source or with the permission of the artist
 
 *Tracks
 https://freemusicarchive.org/ for Upbeat Party by Scott Holmes and Linertie by Yarostan.
+Julia Delaney's by the Bothy Band used with permission.
+Ahern's Egg and Stormy Weather by Peter Browne used with permission - http://www.peterbrownemusic.com/.
 
 Various snippets of HTML CSS and Bootstrap taken from 
 * https://www.w3schools.com/

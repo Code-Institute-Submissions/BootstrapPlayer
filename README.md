@@ -45,6 +45,8 @@ A large range of sound control is possible with the parametric equaliser.  The k
 
 **Compressor**
 
+![para-eq-shot](https://github.com/pbtrad/BootstrapPlayer/blob/master/compressorshot.png)
+
 *The Web Audio API has availabe to developers a Dynamics Compressor Node.  A compressor attenuates an audio signal when its decibel level exceeds a specific threshold.  The Dynamics Compressor Node is an object that provides five properties all of which are provided on the interface.
 
 * Threshold

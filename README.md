@@ -1,4 +1,8 @@
+
 # BootstrapPlayer
+
+![iamresponsive iamge](https://github.com/pbtrad/BootstrapPlayer/blob/master/MS2%20project%20iamresponsive.png)
+
 
 Bootstrap player is a music player with a comprehensive range of audio manipulation options using the [Web Audio API](https://www.w3.org/TR/webaudio/), for audiophiles, sound engineers and those who just want to tweek the music they listen to.
 
@@ -110,7 +114,7 @@ The Web Audio API has many more options available for a complete audio interface
 
 3. **javaScript** : Chrome Dev Tools was the primary source for javaScript testing as it's console is the best for debugging.  The code was also run through https://codebeautify.org/jsvalidate, a javaScript code validator.  The console is showing no errors or warnings after much debugging.
 
-** Major javaScript Bugs, Errors and Warnings**
+**Major javaScript Bugs, Errors and Warnings**
 
 * Bug: WARNING "the audiocontext was not allowed to start. it must be resumed (or created) after a user gesture on the page. https://goo.gl/7k7wlu".
 * Solution: A polyfill added to the Play button (player.js-line 106) - "if (audioContext.state !== 'running') {

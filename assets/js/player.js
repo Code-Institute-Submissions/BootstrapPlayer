@@ -27,32 +27,32 @@ let track_list = [
     name: "Ahern's Egg",
     artist: "Peter Browne",
     image: "https://source.unsplash.com/Qrspubmx6kE/640x360",
-    path: "music/04 Jigs - Ahern's Egg, The Four Six Jig.mp3"
+    path: "assets/music/04 Jigs - Ahern's Egg, The Four Six Jig.mp3"
   },
   {
     name: "Julia Delaney's",
     artist: "The Bothy Band",
-    image: "images/Bottle.jpg",
-    path: "music/04 - Julia Delaney.MP3"
+    image: "assets/images/Bottle.jpg",
+    path: "assets/music/04 - Julia Delaney.MP3"
 
   },
   {
     name: "Stormy Weather",
     artist: "Peter Browne",
-    image: "images/stage.jpg",
-    path: "music/06 Reels - Stormy Weather (Johnny Doherty Version), Pedalling Patterns, The Mountain Top.mp3",
+    image: "assets/images/stage.jpg",
+    path: "assets/music/06 Reels - Stormy Weather (Johnny Doherty Version), Pedalling Patterns, The Mountain Top.mp3",
   },
   {
     name: "Upbeat Party",
     artist: "Scott Holmes",
-    image: "images/martin-engel-grafiker-hamburg-KLFB1AEPLwA-unsplash.jpg",
-    path: "music/Scott_Holmes_-_04_-_Upbeat_Party.mp3",
+    image: "assets/images/martin-engel-grafiker-hamburg-KLFB1AEPLwA-unsplash.jpg",
+    path: "assets/music/Scott_Holmes_-_04_-_Upbeat_Party.mp3",
   },
   {
     name: "Linertie",
     artist: "Yarostan",
-    image: "images/naomi-tamar-4AY3Nf0SniE-unsplash.jpg",
-    path: "music/Yarostan_-_04_-_Linertie_du_mouvement.mp3",
+    image: "assets/images/naomi-tamar-4AY3Nf0SniE-unsplash.jpg",
+    path: "assets/music/Yarostan_-_04_-_Linertie_du_mouvement.mp3",
   },
 ];
 
@@ -188,7 +188,6 @@ function seekUpdate() {
 loadTrack(track_index);
 
 //Polyfill to make event handler as 'passive'
-
 (function () {
   if (typeof EventTarget !== "undefined") {
     let func = EventTarget.prototype.addEventListener;

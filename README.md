@@ -192,6 +192,8 @@ In order to run the code on a local machine, you would go to my Github repositor
 
 5. All the the code for the sound manipulation comes from https://www.w3.org/TR/webaudio/ and https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API.
 
+6. The Graphic Equaliser javaScript is taken from the book "JavaScript for Sound Artists" by William Turner.
+
 **Media**
 
 All media-images and tracks are open source or with the permission of the artist.

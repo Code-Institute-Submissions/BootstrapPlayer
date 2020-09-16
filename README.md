@@ -1,7 +1,7 @@
 
 # BootstrapPlayer
 
-![iamresponsive iamge](https://github.com/pbtrad/BootstrapPlayer/blob/master/MS2%20project%20iamresponsive.png)
+![iamresponsive iamge3](https://github.com/pbtrad/BootstrapPlayer/blob/master/iamresponsivescreenshot3.png)
 
 
 Bootstrap player is a music player with a comprehensive range of audio manipulation options using the [Web Audio API](https://www.w3.org/TR/webaudio/), for audiophiles, sound engineers and those who just want to tweek the music they listen to.
